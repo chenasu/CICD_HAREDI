@@ -7,7 +7,7 @@ describe('Array test suit', ()=>{
             expect(names.sort()).to.be.eql(['Adiel', 'John', 'Tom']);
         });
         it('Sort by name', ()=> {
-            const array = ['Bob', 'Alice', 'Chris0000000_______'];
+            const array = ['Bob', 'Alice', 'Chris'];
             expect(array.sort()).to.be.eql(['Alice', 'Bob', 'Chris']);
         })
     })
