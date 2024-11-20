@@ -4,7 +4,7 @@ const app = express();
 const PORT = 3000;
 
 function printHello(req, res){
-                res.send('{ "text": "Hello, World!" }');
+  res.send('{ "text": "Hello, World! " }');
   console.log('Received a GET request at /');
 } 
 
