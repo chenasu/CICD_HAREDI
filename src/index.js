@@ -10,6 +10,11 @@ function printHello(req, res){
 
 app.get('/', printHello);
 
+app.get('/about', (req, res) => {
+  res.send('{ "text": "Welcome to our website!" }');
+  console.log('Received a GET request at /about');
+});
+
 app.get('/resipes', (req, res) => {
   const resipes = `{
   "recipes": [
