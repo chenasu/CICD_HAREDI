@@ -11,6 +11,11 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^5.0.1",
+    "@types/mocha": "^10.0.9",
+    "chai": "^5.1.2",
+    "mocha": "^10.8.2"
   }
 }
-
