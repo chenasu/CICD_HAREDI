@@ -4,14 +4,14 @@ const app = express();
 const PORT = 3000;
 
 function printHello(req, res){
-    res.send('{ "text": "Hello, World!" }');
-    console.log('Received a GET request at /');
+  res.send('{ "text": "Hello, World!" }');
+  console.log('Received a GET request at /');
 } 
 
 app.get('/', printHello);
 
 app.get('/resipes', (req, res) => {
-    const resipes = `{
+  const resipes = `{
   "recipes": [
     {
       "id": 1,
@@ -96,8 +96,7 @@ app.get('/resipes', (req, res) => {
       "servings": 24
     }
   ]
-}
-`
+}`;
   res.send(resipes);
   console.log('Received a GET request at /home');
 });
